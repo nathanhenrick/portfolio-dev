@@ -1,10 +1,14 @@
 import './App.css'
+import { GlobalStyle } from './components/GlobalStyle'
+import { MainCard } from './components/MainCard/MainCard'
 
 function App() {
 
   return (
     <>
-      <h1>Hello, World!</h1>
+      <GlobalStyle />
+      <MainCard />
+      
     </>
   )
 }
