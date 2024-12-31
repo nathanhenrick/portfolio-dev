@@ -26,11 +26,11 @@ body {
   background-image: linear-gradient(225deg, #050E14, #010805);
   background-attachment: fixed;
   display: flex;
+  flex-direction: row;
   /* justify-content: center; */
   align-items: center;
   background-repeat: no-repeat;
   height: 100vh;
   width: 100vw;
-  padding: 2rem;
 }
 `

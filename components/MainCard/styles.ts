@@ -15,7 +15,7 @@ export const ProfileImage = styled.img`
   width: 7rem;
   aspect-ratio: 1/1;
   user-select: none;
-  border-radius: 2rem;
+  border-radius: 1rem;
 `;
 
 export const NameTitle = styled.h1`
@@ -47,7 +47,6 @@ export const ProfissionTitle = styled.h2`
   font-size: 1.125rem;
   letter-spacing: 0.125rem;
 `;
-//todo ???
 export const WrapperTitles = styled.section`
   width: 100%;
   display: flex;
@@ -79,7 +78,8 @@ export const WrapperSocial = styled.section`
   position: relative;
 `;
 
-export const WrapperLinkedin = styled.div`
+export const WrapperLinkedin = styled.a`
+  all: revert;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -90,13 +90,13 @@ export const WrapperLinkedin = styled.div`
   border-radius: 50%;
   cursor: pointer;
   position: absolute;
-  left: 43%;
+  left: 42%;
   transition-duration: 0.3s;
 
   &:hover {
     border: 2px solid var(--mainColor);
     background-color: var(--mainColor);
-    transform: scale(1.6);
+    transform: scale(1.5);
 
     svg {
       fill: var(--generalBg);
@@ -113,4 +113,5 @@ export const SocialTitle = styled.h3`
   text-transform: uppercase;
   opacity: 5%;
   font-size: 5rem;
+  user-select: none;
 `;
