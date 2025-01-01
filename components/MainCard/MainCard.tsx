@@ -14,11 +14,11 @@ export const MainCard = () => {
       </S.ArticleProfissionTitle>
 
       <S.WrapperTitles>
-        <S.Titles><span>.</span>EMAIL</S.Titles>
+        <S.Title><span>.</span>EMAIL</S.Title>
         <p>nathanhenrick221@gmail.com</p>
-        <S.Titles><span>.</span>BIRTHDAY</S.Titles>
-        <p>14/02/2005</p>
-        <S.Titles><span>.</span>EDUCATION</S.Titles>
+        <S.Title><span>.</span>BIRTHDAY</S.Title>
+        <p>02/14/2005</p>
+        <S.Title><span>.</span>EDUCATION</S.Title>
         <p>Systems Analysis and Development (UNINTER)</p>
       </S.WrapperTitles>
 

@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const WrapperMainCard = styled.section`
   background-color: var(--generalBg);
   width: 25rem;
+  height: fit-content;
   border-radius: 1.5em;
   padding: 1rem;
   display: flex;
@@ -59,7 +60,7 @@ export const WrapperTitles = styled.section`
   }
 `;
 
-export const Titles = styled.h3`
+export const Title = styled.h3`
   font-weight: bold;
   font-size: 1.125rem;
   text-transform: uppercase;
