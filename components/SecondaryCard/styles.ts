@@ -8,6 +8,7 @@ export const GeneralWrapper = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex-grow: 1;
 `;
 
 export const GeneralHeader = styled.nav`
@@ -45,7 +46,7 @@ export const CurrentTitle = styled.h1`
   text-align: center;
 `;
 
-export const LineSubHeader = styled.hr`
+export const Divider = styled.hr`
   height: 0.25rem;
   width: calc(100% - 4rem);
   background-color: var(--cardBg);
@@ -54,15 +55,14 @@ export const LineSubHeader = styled.hr`
 `;
 
 export const WrapperContent = styled.section`
-  flex-grow: 1;
   width: 100%;
   padding: 1rem;
   overflow-y: scroll;
   max-height: 100vh;
 
-  scrollbar-color: var(--mainColor) var(--generalBg); 
+  scrollbar-color: var(--mainColor) var(--generalBg);
   scrollbar-width: thin;
-  
+
   &::-webkit-scrollbar {
     background-color: var(--generalBg);
     width: 0.375rem;
@@ -72,22 +72,24 @@ export const WrapperContent = styled.section`
     background-color: var(--mainColor);
     border-radius: 10px;
   }
-
 `;
 
 export const Text = styled.p`
   font-weight: 300;
   font-size: 16px;
   letter-spacing: 1px;
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
   text-indent: 2rem;
+
+  a {
+    color: var(--mainColor);
+  }
 `;
 
 export const Title = styled.h2`
   font-weight: 600;
   letter-spacing: 1px;
   font-size: 1.125rem;
-  padding: 1rem 0;
 
   span {
     color: var(--mainColor);
@@ -96,31 +98,8 @@ export const Title = styled.h2`
   }
 `;
 
-export const WrapperAbility = styled.section`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  gap: 1rem;
-`;
-
-export const AbilityCard = styled.article`
-  width: 7.5rem;
-  aspect-ratio: 1/1;
-  border-radius: 1.5rem;
-  background-color: var(--cardBg);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition-duration: 0.15s;
-
-  &:hover {
-    background-color: var(--mainColor);
-    svg {
-      fill: var(--cardBg);
-    }
-  }
-
-  svg {
-    font-size: 5rem;
-  }
+export const TitleComplement = styled.p`
+  color: var(--mainColor);
+  font-size: 12px;
+  font-weight: 200;
 `;

@@ -16,7 +16,7 @@ export const ProfileImage = styled.img`
   width: 7rem;
   aspect-ratio: 1/1;
   user-select: none;
-  border-radius: 1rem;
+  // border-radius: 1rem;
 `;
 
 export const NameTitle = styled.h1`
