@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { AboutMe } from "./Sections/AboutMe/AboutMe"
 import { Portfolio } from "./Sections/Portfolio/Portfolio"
+import { Contact } from "./Sections/Contact/Contact"
 import * as S from "./styles"
 
 export const SecondaryCard = () => {
@@ -23,24 +24,20 @@ export const SecondaryCard = () => {
         return <AboutMe />;
       case 'portfolio':
         return <Portfolio />;
-      // case 'contact':
-      //   return <Contact />
+      case 'contact':
+        return <Contact />
       default:
         return null
-        break
     }
   }
 
   return (
     <S.GeneralWrapper>
       <S.GeneralHeader>
-        <S.TitlesHeader onClick={aboutMeActive}>About Me</S.TitlesHeader>
-        <S.TitlesHeader onClick={portfolioActive}>Portfolio</S.TitlesHeader>
-        <S.TitlesHeader onClick={contactActive}>Contact</S.TitlesHeader>
+        <S.TitlesHeader tabIndex={0} onClick={aboutMeActive}>About Me</S.TitlesHeader>
+        <S.TitlesHeader tabIndex={0} onClick={portfolioActive}>Portfolio</S.TitlesHeader>
+        <S.TitlesHeader tabIndex={0} onClick={contactActive}>Contact</S.TitlesHeader>
       </S.GeneralHeader>
-
-      <S.CurrentTitle>Title</S.CurrentTitle>
-      <S.Divider />
 
       {renderActiveSection()}
 

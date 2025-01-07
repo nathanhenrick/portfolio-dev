@@ -56,12 +56,7 @@ export const AbilityCard = styled.article`
   }
 `;
 
-export const TitleContainer = styled.section`
-  margin: 3rem 0 0.5rem 0;
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-`;
+
 
 export const WrapperStudy = styled.section`
   display: flex;

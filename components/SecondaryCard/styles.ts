@@ -17,7 +17,7 @@ export const GeneralHeader = styled.nav`
 
   background-color: var(--cardBg);
   width: 100%;
-  height: 3rem;
+  height: fit-content;
   border-radius: 1.5rem 1.5rem 0 0;
   padding: 0.5rem;
 
@@ -25,8 +25,10 @@ export const GeneralHeader = styled.nav`
   font-size: 20px;
 `;
 
-export const TitlesHeader = styled.a`
-  all: revert;
+export const TitlesHeader = styled.button`
+  all: reverse;
+  background: none;
+  border: none;
   cursor: pointer;
   letter-spacing: 2px;
   transition-duration: 0.1s;
@@ -34,24 +36,6 @@ export const TitlesHeader = styled.a`
   &:hover {
     color: var(--mainColor);
   }
-`;
-
-export const CurrentTitle = styled.h1`
-  color: var(--mainColor);
-  font-weight: 200;
-  font-size: 20px;
-  letter-spacing: 1px;
-  user-select: none;
-  padding: 0.5rem;
-  text-align: center;
-`;
-
-export const Divider = styled.hr`
-  height: 0.25rem;
-  width: calc(100% - 4rem);
-  background-color: var(--cardBg);
-  border: none;
-  outline: none;
 `;
 
 export const WrapperContent = styled.section`
@@ -102,4 +86,11 @@ export const TitleComplement = styled.p`
   color: var(--mainColor);
   font-size: 12px;
   font-weight: 200;
+`;
+
+export const TitleContainer = styled.section`
+  margin: 3rem 0 0.5rem 0;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 `;

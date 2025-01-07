@@ -25,7 +25,7 @@ export const MainCard = () => {
       <S.WrapperSocial>
         <S.SocialTitle>SOCIAL</S.SocialTitle>
 
-        <S.WrapperLinkedin href="https://www.linkedin.com/in/nathan-henrick-martempe-constantino-8459b12a5/" target="blank">
+        <S.WrapperLinkedin tabIndex={0} href="https://www.linkedin.com/in/nathan-henrick-martempe-constantino-8459b12a5/" target="blank">
           <FaLinkedinIn />
         </S.WrapperLinkedin>
 

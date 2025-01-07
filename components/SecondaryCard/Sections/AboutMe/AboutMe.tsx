@@ -7,8 +7,19 @@ import { SiJavascript, SiTypescript, SiStyledcomponents, SiAdobephotoshop, SiPos
 import { CgDesignmodo } from "react-icons/cg";
 import { GiArtificialIntelligence } from "react-icons/gi";
 
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 export const AboutMe = () => {
+
+  gsap.from(".box", {
+    scrollTrigger: ".box", // Elemento que ativa a animação
+    y: 100,               // Movimento no eixo Y
+    opacity: 0,           // Começa invisível
+    duration: 1,          // Duração da animação
+  });
   return (
     <G.WrapperContent>
       <article>
@@ -20,88 +31,88 @@ export const AboutMe = () => {
         </G.Text>
       </article>
 
-      <S.TitleContainer>
+      <G.TitleContainer>
         <G.Title><span>.</span>Abilities</G.Title>
-      </S.TitleContainer>
+      </G.TitleContainer>
 
       <S.WrapperAbility>
         {/* HTML */}
-        <S.AbilityCard>
+        <S.AbilityCard tabIndex={0}>
           <FaHtml5 />
           <S.TooltipAbility>HTML5</S.TooltipAbility>
         </S.AbilityCard>
 
         {/* CSS */}
-        <S.AbilityCard>
+        <S.AbilityCard tabIndex={0}>
           <FaCss3Alt />
           <S.TooltipAbility>CSS3</S.TooltipAbility>
         </S.AbilityCard>
 
         {/* SASS */}
-        <S.AbilityCard>
+        <S.AbilityCard tabIndex={0}>
           <FaSass />
           <S.TooltipAbility>SASS</S.TooltipAbility>
         </S.AbilityCard>
 
         {/* Tailwind */}
-        <S.AbilityCard>
+        <S.AbilityCard tabIndex={0}>
           <RiTailwindCssFill />
           <S.TooltipAbility>Tailwind</S.TooltipAbility>
         </S.AbilityCard>
 
         {/* JavaScript */}
-        <S.AbilityCard>
+        <S.AbilityCard tabIndex={0}>
           <SiJavascript />
           <S.TooltipAbility>JavaScript</S.TooltipAbility>
         </S.AbilityCard>
 
         {/* TypeScript */}
-        <S.AbilityCard>
+        <S.AbilityCard tabIndex={0}>
           <SiTypescript />
           <S.TooltipAbility>TypeScript</S.TooltipAbility>
         </S.AbilityCard>
 
         {/* React */}
-        <S.AbilityCard>
+        <S.AbilityCard tabIndex={0}>
           <FaReact />
           <S.TooltipAbility>React</S.TooltipAbility>
         </S.AbilityCard>
 
         {/* Styled-Components */}
-        <S.AbilityCard>
+        <S.AbilityCard tabIndex={0}>
           <SiStyledcomponents />
           <S.TooltipAbility>Styled-components</S.TooltipAbility>
         </S.AbilityCard>
 
         {/* Git */}
-        <S.AbilityCard>
+        <S.AbilityCard tabIndex={0}>
           <FaGitAlt />
           <S.TooltipAbility>GIT</S.TooltipAbility>
         </S.AbilityCard>
 
         {/* GitHub */}
-        <S.AbilityCard>
+        <S.AbilityCard tabIndex={0}>
           <FaGithubSquare />
           <S.TooltipAbility>GitHub</S.TooltipAbility>
         </S.AbilityCard>
 
         {/* PostgreSQL */}
-        <S.AbilityCard>
+        <S.AbilityCard tabIndex={0}>
           <SiPostgresql />
           <S.TooltipAbility>PostgreSQL</S.TooltipAbility>
         </S.AbilityCard>
 
         {/* Photoshop */}
-        <S.AbilityCard>
+        <S.AbilityCard tabIndex={0}>
           <SiAdobephotoshop />
           <S.TooltipAbility>Photoshop</S.TooltipAbility>
         </S.AbilityCard>
       </S.WrapperAbility>
 
-      <S.TitleContainer>
+      <G.TitleContainer>
         <G.Title><span>.</span>What I'm currently studying</G.Title>
         <G.TitleComplement>This section will be updated regularly</G.TitleComplement>
-      </S.TitleContainer>
+      </G.TitleContainer>
 
       <S.WrapperStudy>
         <S.StudyCard>
@@ -149,26 +160,26 @@ export const AboutMe = () => {
         </S.StudyCard>
       </S.WrapperStudy>
 
-      <S.TitleContainer>
+      <G.TitleContainer>
         <G.Title><span>.</span>Resume</G.Title>
-      </S.TitleContainer>
+      </G.TitleContainer>
 
       <S.ResumeTitle>Education</S.ResumeTitle>
 
       <S.EducationContent>
-        <S.TitleContainer>
+        <G.TitleContainer>
           <S.EducationTitle>Escola da Nuvem</S.EducationTitle>
           <G.TitleComplement>Feb. 2025</G.TitleComplement>
-        </S.TitleContainer>
+        </G.TitleContainer>
 
         <S.EducationText>
           School that presents technician classes about Cloud Computing  with AWS and Generative A.I.
         </S.EducationText>
 
-        <S.TitleContainer>
+        <G.TitleContainer>
           <S.EducationTitle>Santander Tech+</S.EducationTitle>
           <G.TitleComplement>Dec. 2024</G.TitleComplement>
-        </S.TitleContainer>
+        </G.TitleContainer>
 
         <S.WrapperEducationSubTitle>
           <section>
@@ -197,22 +208,22 @@ export const AboutMe = () => {
           </section>
         </S.WrapperEducationSubTitle>
 
-        <S.TitleContainer>
+        <G.TitleContainer>
           <S.EducationTitle>
             Centro Universitário Internacional UNINTER
           </S.EducationTitle>
           <G.TitleComplement>Oct. 2024</G.TitleComplement>
-        </S.TitleContainer>
+        </G.TitleContainer>
 
         <S.EducationText>
           Coursing Systems Analysis and Development, provided to finish in April 2027 (5 semesters)
         </S.EducationText>
       </S.EducationContent>
 
-      <S.TitleContainer>
+      <G.TitleContainer>
         <S.ResumeTitle>Experience</S.ResumeTitle>
         <G.TitleComplement>Only personal projects for a while</G.TitleComplement>
-      </S.TitleContainer>
+      </G.TitleContainer>
 
     </G.WrapperContent>
   )
