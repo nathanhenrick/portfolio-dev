@@ -10,8 +10,7 @@ export const Contact = () => {
       </G.TitleContainer>
 
       <S.ContactForm action="https://formsubmit.co/nathanhenrick221@gmail.com" method="POST">
-        <input type="hidden" name="_next" value="http://localhost:5173/thankspage" />
-
+      
         <label htmlFor="email">Your e-mail</label>
         <S.EmailContact placeholder="exp@example.com" type="email" name="E-mail" required />
 

@@ -1,10 +1,9 @@
 import * as S from "./styles"
 import { FaLinkedinIn } from "react-icons/fa";
 
-
 export const MainCard = () => {
   return (
-    <S.WrapperMainCard>
+    <S.WrapperMainCard>      
       <S.ProfileImage />
       <S.NameTitle>Nathan Henrick <br /> Martempe Constantino</S.NameTitle>
       <S.LineCard />
