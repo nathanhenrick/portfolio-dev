@@ -13,7 +13,7 @@ export const HeroBanner = () => {
     gsap.to("#myText", {
       duration: 2,
       text: "Nathan Henrick",
-      delay: 1.5,
+      delay: 1,
       color: "var(--mainColor)",
       ease: RoughEase.ease.config({
         template: "none.out",
@@ -22,12 +22,20 @@ export const HeroBanner = () => {
         taper: "none",
         randomize: true,
         clamp: false
-      })
+      }),
+      onComplete: () => {
+        gsap.to("#heroContainer", {
+          duration: 1,
+          delay: 1,
+          opacity: 0,
+          ease: "power2.out",
+        });
+      },
     })
 }, []);
 
 return (
-  <S.WrapperBanner>
+  <S.WrapperBanner id="heroContainer">
     <S.BannerTitle id="myText"><span>.</span>Portfolio</S.BannerTitle>
   </S.WrapperBanner>
 )

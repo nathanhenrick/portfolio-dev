@@ -7,21 +7,10 @@ import { SiJavascript, SiTypescript, SiStyledcomponents, SiAdobephotoshop, SiPos
 import { CgDesignmodo } from "react-icons/cg";
 import { GiArtificialIntelligence } from "react-icons/gi";
 
-import gsap from "gsap";
-import ScrollTrigger from "gsap/ScrollTrigger";
-
-gsap.registerPlugin(ScrollTrigger);
-
 export const AboutMe = () => {
 
-  gsap.from(".box", {
-    scrollTrigger: ".box", // Elemento que ativa a animação
-    y: 100,               // Movimento no eixo Y
-    opacity: 0,           // Começa invisível
-    duration: 1,          // Duração da animação
-  });
   return (
-    <G.WrapperContent>
+    <G.WrapperContent className="scrollableWrapper">
       <article>
         <G.Text>
           I'm Nathan, 19. I started studying in October 2023, since then, I've been gaining more knowledge in the web development area. Arriving in October 2024, I joined Centro Universitário Internacional (UNINTER), to course Sytems Analysis and Development.
@@ -35,75 +24,75 @@ export const AboutMe = () => {
         <G.Title><span>.</span>Abilities</G.Title>
       </G.TitleContainer>
 
-      <S.WrapperAbility>
+      <S.WrapperAbility className="abilitiesCards">
         {/* HTML */}
-        <S.AbilityCard tabIndex={0}>
+        <S.AbilityCard className="scrollableWrapper" tabIndex={0}>
           <FaHtml5 />
           <S.TooltipAbility>HTML5</S.TooltipAbility>
         </S.AbilityCard>
 
         {/* CSS */}
-        <S.AbilityCard tabIndex={0}>
+        <S.AbilityCard className="scrollableWrapper" tabIndex={0}>
           <FaCss3Alt />
           <S.TooltipAbility>CSS3</S.TooltipAbility>
         </S.AbilityCard>
 
         {/* SASS */}
-        <S.AbilityCard tabIndex={0}>
+        <S.AbilityCard className="scrollableWrapper" tabIndex={0}>
           <FaSass />
           <S.TooltipAbility>SASS</S.TooltipAbility>
         </S.AbilityCard>
 
         {/* Tailwind */}
-        <S.AbilityCard tabIndex={0}>
+        <S.AbilityCard className="scrollableWrapper" tabIndex={0}>
           <RiTailwindCssFill />
           <S.TooltipAbility>Tailwind</S.TooltipAbility>
         </S.AbilityCard>
 
         {/* JavaScript */}
-        <S.AbilityCard tabIndex={0}>
+        <S.AbilityCard className="scrollableWrapper" tabIndex={0}>
           <SiJavascript />
           <S.TooltipAbility>JavaScript</S.TooltipAbility>
         </S.AbilityCard>
 
         {/* TypeScript */}
-        <S.AbilityCard tabIndex={0}>
+        <S.AbilityCard className="scrollableWrapper" tabIndex={0}>
           <SiTypescript />
           <S.TooltipAbility>TypeScript</S.TooltipAbility>
         </S.AbilityCard>
 
         {/* React */}
-        <S.AbilityCard tabIndex={0}>
+        <S.AbilityCard className="scrollableWrapper" tabIndex={0}>
           <FaReact />
           <S.TooltipAbility>React</S.TooltipAbility>
         </S.AbilityCard>
 
         {/* Styled-Components */}
-        <S.AbilityCard tabIndex={0}>
+        <S.AbilityCard className="scrollableWrapper" tabIndex={0}>
           <SiStyledcomponents />
           <S.TooltipAbility>Styled-components</S.TooltipAbility>
         </S.AbilityCard>
 
         {/* Git */}
-        <S.AbilityCard tabIndex={0}>
+        <S.AbilityCard className="scrollableWrapper" tabIndex={0}>
           <FaGitAlt />
-          <S.TooltipAbility>GIT</S.TooltipAbility>
+          <S.TooltipAbility>Git</S.TooltipAbility>
         </S.AbilityCard>
 
         {/* GitHub */}
-        <S.AbilityCard tabIndex={0}>
+        <S.AbilityCard className="scrollableWrapper" tabIndex={0}>
           <FaGithubSquare />
           <S.TooltipAbility>GitHub</S.TooltipAbility>
         </S.AbilityCard>
 
         {/* PostgreSQL */}
-        <S.AbilityCard tabIndex={0}>
+        <S.AbilityCard className="scrollableWrapper" tabIndex={0}>
           <SiPostgresql />
           <S.TooltipAbility>PostgreSQL</S.TooltipAbility>
         </S.AbilityCard>
 
         {/* Photoshop */}
-        <S.AbilityCard tabIndex={0}>
+        <S.AbilityCard className="scrollableWrapper" tabIndex={0}>
           <SiAdobephotoshop />
           <S.TooltipAbility>Photoshop</S.TooltipAbility>
         </S.AbilityCard>
@@ -188,7 +177,7 @@ export const AboutMe = () => {
             </S.EducationSubTitle>
             <S.EducationTextContainer>
               <S.EducationTextItem>Understading the market labour;</S.EducationTextItem>
-              <S.EducationTextItem>Basics operation computer;</S.EducationTextItem>
+              <S.EducationTextItem>Basics computer operations;</S.EducationTextItem>
               <S.EducationTextItem>History of Computer Science;</S.EducationTextItem>
               <S.EducationTextItem>Fundamental Math.</S.EducationTextItem>
             </S.EducationTextContainer>

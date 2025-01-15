@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import * as G from "../../styles"
 
 export const WrapperEmail = styled.section`
   display: flex;
@@ -67,3 +68,7 @@ export const SubmitContact = styled.button`
     }
   }
 `;
+
+export const TitleContainerContact = styled(G.TitleContainer)`
+ margin-top: 0.5rem; 
+`

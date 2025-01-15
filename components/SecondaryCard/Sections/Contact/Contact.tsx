@@ -5,9 +5,9 @@ import { BsSend } from "react-icons/bs";
 export const Contact = () => {
   return (
     <G.WrapperContent>
-      <G.TitleContainer>
+      <S.TitleContainerContact>
         <G.Title><span>.</span>Send a e-mail</G.Title>
-      </G.TitleContainer>
+      </S.TitleContainerContact>
 
       <S.ContactForm action="https://formsubmit.co/nathanhenrick221@gmail.com" method="POST">
       

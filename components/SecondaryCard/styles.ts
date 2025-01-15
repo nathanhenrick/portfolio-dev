@@ -41,7 +41,7 @@ export const TitlesHeader = styled.button`
 export const WrapperContent = styled.section`
   width: 100%;
   padding: 1rem;
-  overflow-y: scroll;
+  overflow-y: auto;
   max-height: 100vh;
 
   scrollbar-color: var(--mainColor) var(--generalBg);

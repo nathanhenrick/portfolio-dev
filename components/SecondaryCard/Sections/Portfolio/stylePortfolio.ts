@@ -36,5 +36,5 @@ export const ItemContainer = styled.section`
   flex-wrap: wrap;
   flex-direction: row;
   gap: 2rem;
-  max-height: 100%;
+  height: fit-content;
 `

@@ -5,8 +5,12 @@ export const WrapperBanner = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
-  height: 100vh;
+  width: 90vw;
+  height: 90vh;
+  padding: 0;
+  margin: 0;
+
+  overflow: none;
 `
 
 export const BannerTitle = styled.h1`

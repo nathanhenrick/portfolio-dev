@@ -5,7 +5,6 @@ import { Contact } from "./Sections/Contact/Contact"
 import * as S from "./styles"
 
 export const SecondaryCard = () => {
-
   const [activeSection, setActiveSection] = useState<'aboutMe' | 'portfolio' | 'contact'>('aboutMe')
 
   const aboutMeActive = () => {
@@ -18,7 +17,7 @@ export const SecondaryCard = () => {
     setActiveSection('contact')
   }
 
-  const renderActiveSection =() => {
+  const renderActiveSection = () => {
     switch (activeSection) {
       case 'aboutMe':
         return <AboutMe />;

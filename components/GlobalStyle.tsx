@@ -27,11 +27,22 @@ body {
   background-attachment: fixed;
   display: flex;
   flex-direction: row;
-  /* justify-content: center; */
   align-items: center;
   background-repeat: no-repeat;
   height: 100vh;
   width: 100vw;
-  overflow: hidden;
+  overflow-y: auto;
+  scrollbar-color: var(--mainColor) var(--generalBg);
+  scrollbar-width: thin;
+
+  &::-webkit-scrollbar {
+    background-color: var(--generalBg);
+    width: 0.375rem;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--mainColor);
+    border-radius: 10px;
+  }
 }
 `

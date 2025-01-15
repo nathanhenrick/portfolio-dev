@@ -13,10 +13,12 @@ export const WrapperMainCard = styled.section`
 
 export const ProfileImage = styled.img`
   background-color: var(--cardBg);
+  background-position: center center;
+  /* background-size: cover; */
   width: 7rem;
   aspect-ratio: 1/1;
   user-select: none;
-  // border-radius: 1rem;
+  border-radius: 50%;
 `;
 
 export const NameTitle = styled.h1`
