@@ -1,9 +1,9 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 export const WrapperAbility = styled.section`
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
   gap: 1rem;
   &:has(article:hover) article:not(:hover) {
     opacity: 0.4;
@@ -28,7 +28,9 @@ export const TooltipAbility = styled.div`
 
 export const AbilityCard = styled.article`
   position: relative;
-  width: 7.5rem;
+  width: fit-content;
+  max-width: 7.5rem;
+  padding: 1rem;
   aspect-ratio: 1/1;
   border-radius: 1.5rem;
   background-color: var(--cardBg);
@@ -54,9 +56,13 @@ export const AbilityCard = styled.article`
   svg {
     font-size: 5rem;
   }
+
+  @media screen and (max-width: 320px) {
+    svg {
+      font-size: 20vw;
+    }
+  }
 `;
-
-
 
 export const WrapperStudy = styled.section`
   display: flex;
@@ -78,26 +84,23 @@ export const StudyCard = styled.article`
   padding: 1rem;
 `;
 
-export const WrapperStudyCardContent = styled.div`
-  display: flex;
-  flex-direction: column;
-  padding: 0 2rem;
-  width: 70%;
+export const StudyImage = styled.div`
+  font-size: clamp(4rem, 6rem, 8vw);
+  align-self: center;
 `;
 
-export const StudyImage = styled.div`
-  font-size: 6rem;
+export const WrapperStudyCardContent = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 2rem;
 `;
 
 export const StudyCardTitle = styled.h1`
   color: var(--mainColor);
   text-align: left;
-  font-size: 1.25rem;
-`;
-
-export const StudyCardText = styled.p`
-  font-weight: 200;
-  font-size: 0.75rem;
+  font-size: 1rem;
+  text-align: center;
 `;
 
 export const ResumeTitle = styled.h2`
@@ -105,13 +108,13 @@ export const ResumeTitle = styled.h2`
   border-radius: 2rem;
   font-size: 1rem;
   font-weight: 200;
-  padding: 1rem 4rem;
-  margin: 2rem 0;
+  padding: 1rem 2rem;
+  margin: 1rem 0;
   width: fit-content;
 `;
 
 export const EducationContent = styled.article`
-  padding: 0 5rem;
+  padding: 0 1rem;
 `;
 
 export const EducationTitle = styled.h3`
@@ -136,7 +139,7 @@ export const EducationTextItem = styled.li`
 export const WrapperEducationSubTitle = styled.div`
   display: flex;
   flex-direction: row;
-  gap: 5rem;
+  gap: 10vw;
 `;
 
 export const EducationSubTitle = styled.h4`

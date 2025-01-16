@@ -3,12 +3,18 @@ import styled from "styled-components";
 export const WrapperMainCard = styled.section`
   background-color: var(--generalBg);
   width: 25rem;
-  height: fit-content;
+  height: fit-conten;
+  max-height: 95dvh;
+  max-height: 95vh;
   border-radius: 1.5em;
   padding: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media screen and (max-width: 820px) {
+    display: none;
+  }
 `;
 
 export const ProfileImage = styled.img`
@@ -58,7 +64,7 @@ export const WrapperTitles = styled.section`
 
   p {
     font-size: 0.75rem;
-    font-weight: 200;
+    font-weight: 300;
   }
 `;
 

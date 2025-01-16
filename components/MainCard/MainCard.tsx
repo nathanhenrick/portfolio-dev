@@ -5,7 +5,7 @@ import ProfilePhoto from "../../images/profilePhoto.jpg"
 export const MainCard = () => {
   return (
     <S.WrapperMainCard id="wrapperMainCard">      
-      <S.ProfileImage className="w-90" src={ProfilePhoto} alt="Profile photo"/>
+      <S.ProfileImage src={ProfilePhoto} alt="Profile photo"/>
       <S.NameTitle>Nathan Henrick <br /> Martempe Constantino</S.NameTitle>
       <S.LineCard />
 
@@ -25,7 +25,7 @@ export const MainCard = () => {
       <S.WrapperSocial>
         <S.SocialTitle>SOCIAL</S.SocialTitle>
 
-        <S.WrapperLinkedin tabIndex={0} href="https://www.linkedin.com/in/nathan-henrick-martempe-constantino-8459b12a5/" target="blank">
+        <S.WrapperLinkedin tabIndex={0} href="https://www.linkedin.com/in/nathan-henrick-martempe-constantino" target="blank">
           <FaLinkedinIn />
         </S.WrapperLinkedin>
 

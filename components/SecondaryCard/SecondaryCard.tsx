@@ -39,8 +39,6 @@ export const SecondaryCard = () => {
       </S.GeneralHeader>
 
       {renderActiveSection()}
-
-
     </S.GeneralWrapper>
   )
 }

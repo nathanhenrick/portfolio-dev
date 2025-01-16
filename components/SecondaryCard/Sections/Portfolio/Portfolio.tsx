@@ -4,8 +4,13 @@ import * as S from "./stylePortfolio"
 export const Portfolio = () => {
   return (
     <G.WrapperContent>
+      <G.ContainerCurrentTitle>
+        <G.LineCurrenteTitle></G.LineCurrenteTitle>
+        <G.CurrentTitle>Portfolio</G.CurrentTitle>
+        <G.LineCurrenteTitle></G.LineCurrenteTitle>
+      </G.ContainerCurrentTitle>
       <S.ItemContainer>
-        
+
         <S.WrapperPortfolioItem>
           <S.PortfolioItemProducing>IN PRODUCING</S.PortfolioItemProducing>
           <S.PortfolioItemTitle>Shopping Cart</S.PortfolioItemTitle>

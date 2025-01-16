@@ -11,12 +11,13 @@ export const WrapperBanner = styled.section`
   margin: 0;
 
   overflow: none;
+  user-select: none;
 `
 
 export const BannerTitle = styled.h1`
   transition-duration: 3s;
   color: #fff;
-  font-size: 8.75rem;
+  font-size: 10vw;
   font-family: "Iceberg", Arial, Helvetica, sans-serif;
 
   span {

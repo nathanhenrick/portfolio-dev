@@ -1,27 +1,30 @@
 import * as S from "./styleAboutMe"
 import * as G from "../../styles"
 
-import { FaHtml5, FaCss3Alt, FaSass, FaReact, FaGitAlt, FaGithubSquare, FaPython } from "react-icons/fa";
-import { RiTailwindCssFill, RiEnglishInput } from "react-icons/ri";
-import { SiJavascript, SiTypescript, SiStyledcomponents, SiAdobephotoshop, SiPostgresql } from "react-icons/si";
-import { CgDesignmodo } from "react-icons/cg";
-import { GiArtificialIntelligence } from "react-icons/gi";
+import { FaHtml5, FaCss3Alt, FaSass, FaReact, FaGitAlt, FaGithubSquare } from "react-icons/fa";
+import { RiTailwindCssFill } from "react-icons/ri";
+import { SiJavascript, SiTypescript, SiStyledcomponents, SiAdobephotoshop, SiPostgresql, SiJquery } from "react-icons/si";
 
 export const AboutMe = () => {
 
   return (
     <G.WrapperContent className="scrollableWrapper">
+      <G.ContainerCurrentTitle>
+        <G.LineCurrenteTitle />
+        <G.CurrentTitle>About me</G.CurrentTitle>
+        <G.LineCurrenteTitle />
+      </G.ContainerCurrentTitle>
       <article>
         <G.Text>
           I'm Nathan, 19. I started studying in October 2023, since then, I've been gaining more knowledge in the web development area. Arriving in October 2024, I joined Centro Universitário Internacional (UNINTER), to course Sytems Analysis and Development.
         </G.Text>
-        <G.Text>
-          Still talking about study, in November of the same year I was approved in the selection process for Santander Tech+ (partnership with Ada Tech). In December, I was also approved to join <a href="https://escoladanuvem.org/" target="blank">Escola da Nuvem</a> (AWS re/START + IA).
-        </G.Text>
+        {/* <G.Text>
+          Still talking about study, in November of the same year I was approved in the selection process for Santander Tech+ (partnership with Ada Tech). In December 2024 and January 2025 I was approved to join <a href="https://escoladanuvem.org/" target="blank">Escola da Nuvem</a> (AWS re/START + A.I.) and ONE Oracle Next Education, respectively.
+        </G.Text> */}
       </article>
 
       <G.TitleContainer>
-        <G.Title><span>.</span>Abilities</G.Title>
+        <G.Title>Abilities</G.Title>
       </G.TitleContainer>
 
       <S.WrapperAbility className="abilitiesCards">
@@ -91,66 +94,53 @@ export const AboutMe = () => {
           <S.TooltipAbility>PostgreSQL</S.TooltipAbility>
         </S.AbilityCard>
 
+        {/* jQuery */}
+        <S.AbilityCard className="scrollableWrapper" tabIndex={0}>
+          <SiJquery />
+          <S.TooltipAbility>jQuery</S.TooltipAbility>
+        </S.AbilityCard>
+
         {/* Photoshop */}
         <S.AbilityCard className="scrollableWrapper" tabIndex={0}>
           <SiAdobephotoshop />
           <S.TooltipAbility>Photoshop</S.TooltipAbility>
         </S.AbilityCard>
+
       </S.WrapperAbility>
 
       <G.TitleContainer>
-        <G.Title><span>.</span>What I'm currently studying</G.Title>
+        <G.Title>What I'm currently studying</G.Title>
         <G.TitleComplement>This section will be updated regularly</G.TitleComplement>
       </G.TitleContainer>
 
       <S.WrapperStudy>
         <S.StudyCard>
-          <S.StudyImage>
-            <FaPython />
-          </S.StudyImage>
-
           <S.WrapperStudyCardContent>
             <S.StudyCardTitle>Python</S.StudyCardTitle>
-            <S.StudyCardText>To get a better comprehension about the A.I. topics.</S.StudyCardText>
           </S.WrapperStudyCardContent>
         </S.StudyCard>
 
         <S.StudyCard>
-          <S.StudyImage>
-            <CgDesignmodo />
-          </S.StudyImage>
-
           <S.WrapperStudyCardContent>
-            <S.StudyCardTitle>Design</S.StudyCardTitle>
-            <S.StudyCardText>Knowledge about it never hurts.</S.StudyCardText>
+            <S.StudyCardTitle>Redux</S.StudyCardTitle>
           </S.WrapperStudyCardContent>
         </S.StudyCard>
 
         <S.StudyCard>
-          <S.StudyImage>
-            <RiEnglishInput />
-          </S.StudyImage>
-
           <S.WrapperStudyCardContent>
-            <S.StudyCardTitle>English</S.StudyCardTitle>
-            <S.StudyCardText>I'm reading books and watching movies, always using flashcards to a better learning.</S.StudyCardText>
+            <S.StudyCardTitle>NodeJS</S.StudyCardTitle>
           </S.WrapperStudyCardContent>
         </S.StudyCard>
 
         <S.StudyCard>
-          <S.StudyImage>
-            <GiArtificialIntelligence />
-          </S.StudyImage>
-
           <S.WrapperStudyCardContent>
-            <S.StudyCardTitle>Basics of A.I.</S.StudyCardTitle>
-            <S.StudyCardText>Learning it for Escola da Nuvem</S.StudyCardText>
+            <S.StudyCardTitle>Artificial Intelligence</S.StudyCardTitle>
           </S.WrapperStudyCardContent>
         </S.StudyCard>
       </S.WrapperStudy>
 
       <G.TitleContainer>
-        <G.Title><span>.</span>Resume</G.Title>
+        <G.Title>Resume</G.Title>
       </G.TitleContainer>
 
       <S.ResumeTitle>Education</S.ResumeTitle>
@@ -160,9 +150,16 @@ export const AboutMe = () => {
           <S.EducationTitle>Escola da Nuvem</S.EducationTitle>
           <G.TitleComplement>Feb. 2025</G.TitleComplement>
         </G.TitleContainer>
-
         <S.EducationText>
           School that presents technician classes about Cloud Computing  with AWS and Generative A.I.
+        </S.EducationText>
+
+        <G.TitleContainer>
+          <S.EducationTitle>ONE Oracle Next Education</S.EducationTitle>
+          <G.TitleComplement>Jan. 2025</G.TitleComplement>
+        </G.TitleContainer>
+        <S.EducationText>
+          Oracle program with Alura partnership, more than 700 hours of workload. Topics: Innovation and management, programming and A.I..
         </S.EducationText>
 
         <G.TitleContainer>
