@@ -57,7 +57,7 @@ export const AbilityCard = styled.article`
     font-size: 5rem;
   }
 
-  @media screen and (max-width: 320px) {
+  @media screen and (max-width: 20rem) {
     svg {
       font-size: 20vw;
     }
@@ -118,21 +118,22 @@ export const EducationContent = styled.article`
 `;
 
 export const EducationTitle = styled.h3`
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 300;
 `;
 
 export const EducationText = styled.p`
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 200;
 `;
 
 export const EducationTextContainer = styled.ul`
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 200;
 `;
 
 export const EducationTextItem = styled.li`
+  margin: 0.25rem 0;
   list-style: none;
 `;
 
@@ -144,6 +145,6 @@ export const WrapperEducationSubTitle = styled.div`
 
 export const EducationSubTitle = styled.h4`
   color: var(--mainColor);
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 300;
 `;

@@ -3,6 +3,7 @@ import * as S from "./styleContact"
 import { BsSend } from "react-icons/bs";
 import { FaLinkedin, FaGithub } from "react-icons/fa6";
 import { PiReadCvLogo } from "react-icons/pi";
+import { MdOutlineKeyboardDoubleArrowDown } from "react-icons/md";
 
 export const Contact = () => {
   return (
@@ -24,30 +25,57 @@ export const Contact = () => {
         <label htmlFor="message">Your message</label>
         <S.MessageContact placeholder="Write here..." name="Message" required />
 
-        <S.SubmitContact type="submit">
-          <BsSend className="sendIcon" />
-          Send
-        </S.SubmitContact>
+        <S.ContainerScrollArrow>
+          <MdOutlineKeyboardDoubleArrowDown />
+          <S.SubmitContact type="submit">
+            <BsSend className="sendIcon" />
+            Send
+          </S.SubmitContact>
+          <MdOutlineKeyboardDoubleArrowDown />
+        </S.ContainerScrollArrow>
       </S.ContactForm>
 
-      <S.ContainerSocialMedia>
-        <S.SocialMediaTitle>Social</S.SocialMediaTitle>
-        <S.ArticleSocialMedia>
-          <FaLinkedin>
-            <a href="https://www.linkedin.com/in/nathan-henrick-martempe-constantino/" target="blank"></a>
-          </FaLinkedin>
-          <FaGithub>
-            <a href="" target="blank"></a>
-          </FaGithub>
-          <PiReadCvLogo>
-            <a href="" target="blank"></a>
-          </PiReadCvLogo>
-        </S.ArticleSocialMedia>
-      </S.ContainerSocialMedia>
-
       <S.GeneralFooter>
+        <S.ContainerSocialMedia>
+          <S.MinorTitle>Social</S.MinorTitle>
+          <S.ArticleSocialMedia>
+            <a href="https://www.linkedin.com/in/nathan-henrick-martempe-constantino/" target="_blank">
+              <FaLinkedin />
+              <S.SocialTitle>
+                LinkedIn
+              </S.SocialTitle>
+            </a>
+
+            <a href="https://github.com/nathanhenrick" target="_blank">
+              <FaGithub />
+              <S.SocialTitle>
+                GitHub
+              </S.SocialTitle>
+            </a>
+
+            <a href="src\assets\NathanHenrickCV.pdf" download={'NathanHenrickCV.pdf'}>
+              <PiReadCvLogo />
+              <S.SocialTitle>
+                CV
+              </S.SocialTitle>
+            </a>
+          </S.ArticleSocialMedia>
+        </S.ContainerSocialMedia>
+
+        <S.ContainerStack>
+          <S.MinorTitle>
+            Stack
+          </S.MinorTitle>
+          <G.Text>
+            I used <span>React</span>, <span>Styled-Components</span>, <span>TypeScript</span> and <span>GSAP</span> library.
+          </G.Text>
+        </S.ContainerStack>
+
+        <div>
+          <p>© 2025 Nathan Henrick Martempe Constantino. All rights reserved.</p>
+        </div>
 
       </S.GeneralFooter>
-    </G.WrapperContent>
+    </G.WrapperContent >
   )
 }

@@ -18,7 +18,7 @@ export const PortfolioItemProducing = styled.p`
 
   font-weight: 200;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 0.125rem;
 `;
 
 export const PortfolioItemTitle = styled(PortfolioItemProducing)`
@@ -26,7 +26,7 @@ export const PortfolioItemTitle = styled(PortfolioItemProducing)`
   color: var(--mainColor);
   font-weight: 600;
   text-transform: none;
-  letter-spacing: 1px;
+  letter-spacing: 0.0625rem;
 `
 
 export const ItemContainer = styled.section`

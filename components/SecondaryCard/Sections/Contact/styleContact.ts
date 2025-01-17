@@ -6,12 +6,12 @@ export const ContactForm = styled.form`
   textarea {
     background-color: var(--generalBg);
     border-radius: 1rem;
-    border: 2px solid var(--mainColor);
+    border: 0.125rem solid var(--mainColor);
     margin-bottom: 1rem;
   }
 
   label {
-    font-size: 14px;
+    font-size: 0.875rem;
   }
 `;
 
@@ -25,10 +25,19 @@ export const EmailContact = styled.input`
 export const MessageContact = styled.textarea`
   display: block;
   width: 100%;
-  height: 50vh;
-  max-height: 33vh;
+  height: 33vh;
+  max-height: 35vh;
   padding: 0.5rem 1.5rem;
 `;
+
+export const ContainerScrollArrow = styled.div`
+  display: flex;
+  justify-content: space-evenly;
+
+  svg {
+    font-size: 3rem;
+  }
+`
 
 export const SubmitContact = styled.button`
   display: flex;
@@ -45,7 +54,7 @@ export const SubmitContact = styled.button`
   background-color: var(--mainColor);
   color: var(--generalBg);
   font-weight: 700;
-  letter-spacing: 1px;
+  letter-spacing: 0.0625rem;
   transition-duration: 0.1s;
 
   svg {
@@ -56,7 +65,7 @@ export const SubmitContact = styled.button`
   &:hover {
     background-color: var(--generalBg);
     color: var(--mainColor);
-    outline: 2px solid var(--mainColor);
+    outline: 0.125rem solid var(--mainColor);
 
     svg {
       fill: var(--mainColor);
@@ -68,10 +77,50 @@ export const TitleContainerContact = styled(G.TitleContainer)`
   margin-top: 0.5rem;
 `;
 
-export const ContainerSocialMedia = styled.section`
-  height: 80vh;
+export const GeneralFooter = styled.footer`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  height: auto;
+
+  & > div {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+`;
+
+export const ContainerSocialMedia = styled.article`
+  a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+  }
+`;
+
+export const ContainerStack = styled(ContainerSocialMedia)``;
+
+export const SocialTitle = styled.h3`
+  color: #fff;
+  font-weight: 200;
+  font-size: 0.9rem;
+`;
+
+export const ArticleSocialMedia = styled.article`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 5vw;
+  transition-duration: 0.3s;
+
   svg {
-    font-size: 4vw;
+    font-size: 4rem;
     min-width: 2rem;
     transition-duration: 0.3s;
 
@@ -82,19 +131,12 @@ export const ContainerSocialMedia = styled.section`
   }
 `;
 
-export const ArticleSocialMedia = styled.article`
-  display: flex;
-  justify-content: center;
-  column-gap: 5vw;
-`;
-
-export const SocialMediaTitle = styled.h2`
+export const MinorTitle = styled.h2`
   text-align: center;
-  font-weight: 800;
-  letter-spacing: 2px;
+  font-weight: 600;
+  letter-spacing: 0.125rem;
   text-transform: uppercase;
   color: #fff;
   margin: 3rem 0 1rem 0;
+  position: relative;
 `;
-
-export const GeneralFooter = styled.footer``;

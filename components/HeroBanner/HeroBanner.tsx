@@ -15,14 +15,7 @@ export const HeroBanner = () => {
       text: "Nathan Henrick",
       delay: 1,
       color: "var(--mainColor)",
-      ease: RoughEase.ease.config({
-        template: "none.out",
-        strength: 1,
-        points: 10,
-        taper: "none",
-        randomize: true,
-        clamp: false
-      }),
+      ease: "back.out(0)",
       onComplete: () => {
         gsap.to("#heroContainer", {
           duration: 1,

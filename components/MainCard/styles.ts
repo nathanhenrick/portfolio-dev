@@ -12,7 +12,7 @@ export const WrapperMainCard = styled.section`
   flex-direction: column;
   align-items: center;
 
-  @media screen and (max-width: 820px) {
+  @media screen and (max-width: 51.25rem) {
     display: none;
   }
 `;
@@ -95,7 +95,7 @@ export const WrapperLinkedin = styled.a`
   width: 2.2rem;
   aspect-ratio: 1/1;
   background-color: var(--generalBg);
-  border: 2px solid var(--mainColor);
+  border: 0.125rem solid var(--mainColor);
   border-radius: 50%;
   cursor: pointer;
   position: absolute;
@@ -103,7 +103,7 @@ export const WrapperLinkedin = styled.a`
   transition-duration: 0.3s;
 
   &:hover {
-    border: 2px solid var(--mainColor);
+    border: 0.125rem solid var(--mainColor);
     background-color: var(--mainColor);
     transform: scale(1.5);
 

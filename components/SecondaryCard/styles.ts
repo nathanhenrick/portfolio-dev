@@ -10,7 +10,7 @@ export const GeneralWrapper = styled.section`
   align-items: center;
   flex-grow: 1;
 
-  @media screen and (min-width: 581px) and (max-width: 820px) {
+  @media screen and (min-width: 36.3125rem) and (max-width: 51.25rem) {
     h2 {
       font-size: 3.5vw;
     }
@@ -18,7 +18,7 @@ export const GeneralWrapper = styled.section`
       font-size: 2vw;
     }
   }
-  @media screen and (max-width: 580px) {
+  @media screen and (max-width: 36.25rem) {
     h2 {
       font-size: 4.25vw;
     }
@@ -26,7 +26,7 @@ export const GeneralWrapper = styled.section`
       font-size: 3.25vw;
     }
   }
-  @media screen and (max-width: 420px) {
+  @media screen and (max-width: 26.25rem) {
     nav {
       button {
         display: block;
@@ -46,17 +46,17 @@ export const GeneralHeader = styled.nav`
   padding: 0.5rem;
 
   font-weight: 200;
-  font-size: 20px;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  font-size: 1.25rem;
+  box-shadow: 0 0.625rem 0.625rem rgba(0, 0, 0, 0.1);
   z-index: 999;
 `;
 
 export const TitlesHeader = styled.button`
-  font-size: clamp(2vw, 20px, 3.5vw);
+  font-size: clamp(2vw, 1.25rem, 3.5vw);
   background: none;
   border: none;
   cursor: pointer;
-  letter-spacing: 2px;
+  letter-spacing: 0.125rem;
   transition-duration: 0.1s;
   position: relative;
 
@@ -106,7 +106,7 @@ export const ContainerCurrentTitle = styled.div`
 `;
 export const LineCurrenteTitle = styled.div`
   flex-grow: 1;
-  height: 2px;
+  height: 0.125rem;
   width: 100%;
   background-color: var(--cardBg);
 `;
@@ -136,10 +136,10 @@ export const WrapperContent = styled.section`
 
   &::-webkit-scrollbar-thumb {
     background-color: var(--mainColor);
-    border-radius: 10px;
+    border-radius: 0.625rem;
   }
 
-  @media screen and (max-width: 350px) {
+  @media screen and (max-width: 21.875rem) {
     svg.sendIcon {
       display: none;
     }
@@ -148,18 +148,23 @@ export const WrapperContent = styled.section`
 
 export const Text = styled.p`
   font-weight: 300;
-  font-size: 16px;
-  letter-spacing: 1px;
+  font-size: 1rem;
+  letter-spacing: 0.0625rem;
   text-indent: 2rem;
 
   a {
     color: var(--mainColor);
   }
+
+  span {
+    color: var(--mainColor);
+    font-weight: 500;
+  }
 `;
 
 export const Title = styled.h2`
   font-weight: 600;
-  letter-spacing: 1px;
+  letter-spacing: 0.0625rem;
   font-size: 1.125rem;
   text-align: left;
 
@@ -173,8 +178,9 @@ export const Title = styled.h2`
 
 export const TitleComplement = styled.p`
   color: var(--mainColor);
-  font-size: 12px;
-  font-weight: 200;
+  font-size: 0.75rem;
+  font-weight: 400;
+  letter-spacing: 0.0625rem;
 `;
 
 export const TitleContainer = styled.section`
