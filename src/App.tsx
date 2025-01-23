@@ -21,8 +21,8 @@ function App() {
       <GlobalStyle />
 
       {visible && <HeroBanner />}
-      {!visible && <MainCard />}
-      {!visible && <SecondaryCard />}
+      <MainCard />
+      <SecondaryCard />
     </div>
   )
 }

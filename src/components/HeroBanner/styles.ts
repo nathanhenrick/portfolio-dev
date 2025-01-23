@@ -1,18 +1,19 @@
 import styled from "styled-components";
 
 export const WrapperBanner = styled.section`
+  background-image: var(--backImage);
   z-index: 999;
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 90vw;
-  height: 90vh;
-  padding: 0;
-  margin: 0;
+  inset: 0;
+  opacity: 1;
 
   overflow: none;
   user-select: none;
-`
+  visibility: none;
+`;
 
 export const BannerTitle = styled.h1`
   transition-duration: 3s;
@@ -24,4 +25,4 @@ export const BannerTitle = styled.h1`
     font-size: calc(inherit + 40%);
     color: var(--mainColor);
   }
-`
+`;

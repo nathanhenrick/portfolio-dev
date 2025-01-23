@@ -10,26 +10,46 @@ gsap.registerPlugin(RoughEase);
 
 export const HeroBanner = () => {
   useEffect(() => {
+    gsap.set("#myDiv", {
+      opacity: 0,
+      scale: 0,
+    })
+    gsap.to("#myDiv", {
+      opacity: 1,
+      scale: 1,
+      duration: 1.5,
+      ease: "power4.out",
+    })
+
     gsap.to("#myText", {
+      opacity: 1,
+      scale: 1,
       duration: 2,
       text: "Nathan Henrick",
       delay: 1,
       color: "var(--mainColor)",
-      ease: "back.out(0)",
+      ease: "power4.out",
       onComplete: () => {
-        gsap.to("#heroContainer", {
-          duration: 1,
+        gsap.to("#myDiv", {
           delay: 1,
           opacity: 0,
-          ease: "power2.out",
-        });
+          onComplete: () => {
+            gsap.to("#heroContainer", {
+              duration: 1,
+              delay: 0,
+              opacity: 0,
+            });
+          }
+        })
       },
     })
-}, []);
+  }, []);
 
-return (
-  <S.WrapperBanner id="heroContainer">
-    <S.BannerTitle id="myText"><span>.</span>Portfolio</S.BannerTitle>
-  </S.WrapperBanner>
-)
+  return (
+    <S.WrapperBanner id="heroContainer">
+      <div id="myDiv">
+        <S.BannerTitle id="myText"><span>.</span>Portfolio</S.BannerTitle>
+      </div>
+    </S.WrapperBanner>
+  )
 }

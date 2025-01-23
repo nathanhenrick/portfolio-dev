@@ -9,6 +9,18 @@ export const GeneralWrapper = styled.section`
   flex-direction: column;
   align-items: center;
   flex-grow: 1;
+  animation: 9s ease-in-out slideInRight;
+
+  @keyframes slideInRight {
+    from {
+      opacity: 0;
+      transform: translateX(1%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
 
   @media screen and (min-width: 36.3125rem) and (max-width: 51.25rem) {
     h2 {
@@ -48,7 +60,7 @@ export const GeneralHeader = styled.nav`
   font-weight: 200;
   font-size: 1.25rem;
   box-shadow: 0 0.625rem 0.625rem rgba(0, 0, 0, 0.1);
-  z-index: 999;
+  z-index: 900;
 `;
 
 export const TitlesHeader = styled.button`
@@ -57,7 +69,7 @@ export const TitlesHeader = styled.button`
   border: none;
   cursor: pointer;
   letter-spacing: 0.125rem;
-  transition-duration: 0.1s;
+  transition-duration: 0.3s;
   position: relative;
 
   &::before {
@@ -67,7 +79,7 @@ export const TitlesHeader = styled.button`
     right: 50%;
     width: 0;
     height: 0.125rem;
-    transition-duration: 0.3s;
+    transition-duration: 0.6s;
   }
 
   &:hover::before {
@@ -82,7 +94,7 @@ export const TitlesHeader = styled.button`
     left: 50%;
     width: 0;
     height: 0.125rem;
-    transition-duration: 0.3s;
+    transition-duration: 0.6s;
   }
 
   &:hover::after {
@@ -92,6 +104,8 @@ export const TitlesHeader = styled.button`
 
   &:hover {
     color: var(--mainColor);
+    transform: translateY(0.5rem);
+    transition: transform 0.3s ease-in-out;
   }
 `;
 
@@ -151,6 +165,7 @@ export const Text = styled.p`
   font-size: 1rem;
   letter-spacing: 0.0625rem;
   text-indent: 2rem;
+  text-align: justify;
 
   a {
     color: var(--mainColor);
@@ -159,6 +174,27 @@ export const Text = styled.p`
   span {
     color: var(--mainColor);
     font-weight: 500;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 0.125rem;
+      background-color: var(--mainColor);
+      animation: 8s ease-in-out infinite reverse lineStack;
+    }
+
+    @keyframes lineStack {
+      0%,
+      100% {
+        width: 100%;
+      }
+      50% {
+        width: 10%;
+      }
+    }
   }
 `;
 

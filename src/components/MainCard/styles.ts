@@ -11,11 +11,24 @@ export const WrapperMainCard = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
+  animation: 6.5s ease-in-out slideInLeft;
 
   @media screen and (max-width: 51.25rem) {
     display: none;
   }
+
+  @keyframes slideInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-30%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
 `;
+
 
 export const ProfileImage = styled.img`
   background-color: var(--cardBg);

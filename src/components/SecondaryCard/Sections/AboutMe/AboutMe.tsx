@@ -16,11 +16,10 @@ export const AboutMe = () => {
       </G.ContainerCurrentTitle>
       <article>
         <G.Text>
-          I'm Nathan, 19. I started studying in October 2023, since then, I've been gaining more knowledge in the web development area. Arriving in October 2024, I joined Centro Universitário Internacional (UNINTER), to course Sytems Analysis and Development.
+          I'm Nathan, 19. I started studying in October 2023, since then, I've been acquiring more knowledge in the web development area.
+          At the age of 4 I had my first contact with a computer, I think that's the reason I always was interested about this things. When I was 14 the Photoshop looked something fantastic, so I learned to use it — only to entertainment.
+          Furthermore, if you ask me: "Why you chose to be a developer?", my answer would be: "For fun!".
         </G.Text>
-        {/* <G.Text>
-          Still talking about study, in November of the same year I was approved in the selection process for Santander Tech+ (partnership with Ada Tech). In December 2024 and January 2025 I was approved to join <a href="https://escoladanuvem.org/" target="blank">Escola da Nuvem</a> (AWS re/START + A.I.) and ONE Oracle Next Education, respectively.
-        </G.Text> */}
       </article>
 
       <G.TitleContainer>

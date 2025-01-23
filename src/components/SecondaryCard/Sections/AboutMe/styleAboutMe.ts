@@ -37,15 +37,16 @@ export const AbilityCard = styled.article`
   display: flex;
   justify-content: center;
   align-items: center;
-  transition-duration: 0.5s;
+  transition-duration: 1s;
   transition-timing-function: ease;
 
   &:hover {
     background-color: var(--mainColor);
+    transform: translateY(-8px);
 
     div {
       opacity: 1;
-      transform: translateY(0); /* Faz o tooltip aparecer */
+      transform: translateY(0);
     }
 
     svg {

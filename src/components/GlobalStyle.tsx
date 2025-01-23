@@ -5,9 +5,10 @@ export const GlobalStyle = createGlobalStyle`
     --generalBg: #222326;
     --cardBg: #363A45;
     --mainColor: #47B4C2;
+    --backImage: linear-gradient(225deg, #050E14, #010805);
   }
 
-  *, html {
+  * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -21,9 +22,9 @@ export const GlobalStyle = createGlobalStyle`
   }
 }
 
-body {
+body, html {
   background-color: #050E14;
-  background-image: linear-gradient(225deg, #050E14, #010805);
+  background-image: var(--backImage);
   background-attachment: fixed;
   display: flex;
   flex-direction: row;
@@ -31,6 +32,7 @@ body {
   background-repeat: no-repeat;
   height: 100vh;
   width: 100vw;
+  /* max-width: ; */
   overflow-y: auto;
   scrollbar-color: var(--mainColor) var(--generalBg);
   scrollbar-width: thin;
@@ -44,5 +46,6 @@ body {
     background-color: var(--mainColor);
     border-radius: 10px;
   }
+  
 }
 `

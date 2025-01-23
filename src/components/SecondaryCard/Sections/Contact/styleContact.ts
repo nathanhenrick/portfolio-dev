@@ -67,6 +67,8 @@ export const SubmitContact = styled.button`
     color: var(--mainColor);
     outline: 0.125rem solid var(--mainColor);
 
+    box-shadow: 0 0 10px var(--mainColor);
+
     svg {
       fill: var(--mainColor);
     }
@@ -127,6 +129,7 @@ export const ArticleSocialMedia = styled.article`
     &:hover {
       fill: var(--mainColor);
       cursor: pointer;
+      transform: translateY(-10%);
     }
   }
 `;
