@@ -11,7 +11,7 @@ export const WrapperMainCard = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  animation: 6.5s ease-in-out slideInLeft;
+  animation: 5.5s ease-in-out slideInLeft;
 
   @media screen and (max-width: 51.25rem) {
     display: none;

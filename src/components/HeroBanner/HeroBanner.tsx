@@ -13,6 +13,7 @@ export const HeroBanner = () => {
     gsap.set("#myDiv", {
       opacity: 0,
       scale: 0,
+      fontFamily: "Iceberg, Arial, Helvetica, sans-serif;"
     })
     gsap.to("#myDiv", {
       opacity: 1,
